@@ -1,9 +1,9 @@
 package org.example.Client;
 
 import org.example.Server.Commands.AbstractCommand;
-
 import java.util.ArrayList;
 
+/**Class that validate entered data and send fields to @ObjectReading*/
 public class CommandDataChecker {
     private ArrayList<String> extraArgs = new ArrayList<>();
 

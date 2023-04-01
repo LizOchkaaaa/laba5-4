@@ -5,7 +5,7 @@ import org.example.Server.Models.FormOfEducation;
 public class ValidatorFormOfEducation extends ValidateAbstract<FormOfEducation>{
 
     public ValidatorFormOfEducation() {
-        super("StudyGroup.FormOfEducation");
+        super("StudyGroup.FormOfEducation" , "not null");
     }
 
     @Override

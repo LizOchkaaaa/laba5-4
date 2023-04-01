@@ -8,6 +8,8 @@ import org.example.Server.Validator.ValidatorManager;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
+/**The class from which we get data for the collection element*/
+
 public class ObjectReading {
     public ArrayList<String> objread(AbstractCommand command , LinkedHashMap<String, String> fields) {
         ArrayList<String> extraArgs = new ArrayList<String>();
@@ -40,7 +42,7 @@ public class ObjectReading {
                             extraArgs.add(valueOfField);
                             iter++;
                         } else {
-                            OutStream.outputIntoCLI("You've typed wrong value of field.");
+                            OutStream.outputIntoCLI("You've typed wrong value of field. Restriction for that field: " + validator.getRestriction());
                         }
                     }
                 } else {
@@ -48,7 +50,6 @@ public class ObjectReading {
                                 .getCurrentCommand() < ExecuteScriptCommand.getCurrentCommand() + fields.size() - 1) {
                         return new ArrayList<String>();
                     }
-                    System.out.println("ТУТ");
                     int startValue = ExecuteScriptCommand.getCurrentCommand();
                     for (int iter1 = startValue + 1; iter1 < ExecuteScriptCommand.getReadedCommands().size()
                             - startValue; iter1++) {

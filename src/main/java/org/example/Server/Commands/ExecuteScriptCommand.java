@@ -40,7 +40,9 @@ public class ExecuteScriptCommand extends AbstractCommand implements Execute {
         StringBuilder execution = new StringBuilder();
         String fileName = arguments.get(0);
         if (historyOfFiles.contains(fileName)) {
+            historyOfFiles=  new ArrayList<>();
             return execution.append("You have recursion in your script. Failed.").toString();
+
         }
 
         historyOfFiles.add(fileName);

@@ -3,7 +3,7 @@ package org.example.Server.Validator;
 public class ValidateCoordinatesX extends ValidateAbstract<Double> {
 
     public ValidateCoordinatesX() {
-        super("StudyGroup.Coordinates.x");
+        super("StudyGroup.Coordinates.x" , ">=-564");
     }
 
     @Override

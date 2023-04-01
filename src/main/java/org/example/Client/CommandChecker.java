@@ -1,12 +1,12 @@
 package org.example.Client;
 
 import org.example.Server.Commands.AbstractCommand;
-import org.example.Server.Commands.UpdateIdCommand;
 import org.example.Server.Invoker;
-import org.example.Server.Receiver;
 import org.example.Server.UniqueId;
 import java.util.*;
 
+
+/**Class for validating commands and input*/
 public class CommandChecker {
     public DataInOutStatus checkCorrectnessOfCommand(String commandName , ArrayList<String> argumentsToCommand) {
         DataInOutStatus correctnessStatus = DataInOutStatus.SUCCESSFULLY;
@@ -20,6 +20,7 @@ public class CommandChecker {
             if (command.getCountOfInlineExtraArgs() == 0 && argumentsToCommand.size() != 0) {
                 return DataInOutStatus.WRONGARGS;
             }
+            /*проверяем команду , нужны ли ей дополнительные аргументы */
             if (command.getCountOfInlineExtraArgs() == 1 || command.isNeededElementFields()) {
                 if (command.getName().equals("update")) {
                     if (argumentsToCommand.size() == 0 || argumentsToCommand.size() !=1 || Invoker.execute(command , argumentsToCommand).equals("FAILED")) {

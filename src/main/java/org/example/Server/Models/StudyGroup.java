@@ -1,8 +1,7 @@
 package org.example.Server.Models;
-import org.example.Annotation.Complex;
-import org.example.Annotation.Date;
-import org.example.Server.XmlUtils.DateTimeAdapter;
 
+import org.example.Annotation.Complex;
+import org.example.Server.XmlUtils.DateTimeAdapter;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;

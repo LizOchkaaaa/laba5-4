@@ -1,14 +1,9 @@
 package org.example.Client;
 
-import org.example.Server.Commands.ExitCommand;
-import org.example.Server.Invoker;
-import org.example.exceptions.FileLoadingException;
-
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
+/**A class that reads input from the console*/
 public class InputClireader {
     /* вызываем входящий поток */
     private static Scanner inputReader = new Scanner(System.in);
@@ -30,11 +25,13 @@ public class InputClireader {
                 if (inputData.equals("exit")) {
                     break;
                 }
+                OutStream.outputIntoCLI("Type commands");
                 inputData = inputReader.nextLine();
             }
             return DataInOutStatus.SUCCESSFULLY;
         } catch (NullPointerException |
                  NoSuchElementException e) {
+            OutStream.outputIntoCLI("You pressed ctrl + D");
             return DataInOutStatus.FAILED;
         }
     }

@@ -3,7 +3,7 @@ package org.example.Server.Validator;
 public class ValidatorCoordinates extends ValidateAbstract<String[]> {
 
     public ValidatorCoordinates() {
-        super("Coordinates");
+        super("Coordinates" , "");
     }
 
     @Override

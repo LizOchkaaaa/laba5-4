@@ -1,8 +1,6 @@
 package org.example.Server.Factores;
 
 import org.example.Server.Models.*;
-
-
 import java.util.ArrayList;
 
 public class StudyGroupFactory {

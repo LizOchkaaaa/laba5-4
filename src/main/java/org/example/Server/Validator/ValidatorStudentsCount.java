@@ -3,7 +3,7 @@ package org.example.Server.Validator;
 public class ValidatorStudentsCount extends ValidateAbstract<Integer> {
 
     public ValidatorStudentsCount() {
-        super("StudyGroup.studentsCount");
+        super("StudyGroup.studentsCount" , "> 0");
     }
 
     @Override

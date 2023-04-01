@@ -3,12 +3,12 @@ package org.example.Server;
 import org.example.Server.Factores.StudyGroupFactory;
 import org.example.Server.Models.FormOfEducation;
 import org.example.Server.Models.StudyGroup;
-import org.example.Server.XmlUtils.xmlFileHandler;
-import org.example.Server.LocalDateBase;
+import org.example.Server.XmlUtils.XmlFileHandler;
 
 import java.io.File;
 import java.util.*;
 
+/**Execution class of all commands*/
 public class Receiver {
 
     private final LocalDateBase localDateBase;
@@ -49,7 +49,7 @@ public class Receiver {
 
     public String saveCollection() {
         try {
-            if (new xmlFileHandler().save(getMainCollection(), new File("file.xml"))) {
+            if (new XmlFileHandler().save(getMainCollection(), new File("file.xml"))) {
                 return "Collection saved successfully";
             } else  {
                 return "Faild";

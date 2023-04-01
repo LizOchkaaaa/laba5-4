@@ -5,7 +5,7 @@ import org.example.Server.Models.Color;
 public class ValidatorHairColor extends ValidateAbstract<Color>{
 
     public ValidatorHairColor() {
-        super("StudyGroup.Person.Color");
+        super("StudyGroup.Person.Color" , "not null");
     }
 
     @Override

@@ -1,5 +1,6 @@
 package org.example.Client;
 
+/**Checking the status of entered data*/
 public enum DataInOutStatus {
     FAILED ("Failed"),
     SUCCESSFULLY("Successfully"),

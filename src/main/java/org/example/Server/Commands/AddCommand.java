@@ -1,6 +1,5 @@
 package org.example.Server.Commands;
 
-
 import org.example.Server.Receiver;
 import org.example.Server.Interfaces.Execute;
 

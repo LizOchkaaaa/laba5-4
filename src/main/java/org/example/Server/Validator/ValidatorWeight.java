@@ -3,7 +3,7 @@ package org.example.Server.Validator;
 public class ValidatorWeight extends ValidateAbstract<Integer>{
 
     public ValidatorWeight() {
-        super("StudyGroup.Person.weight");
+        super("StudyGroup.Person.weight" , "not null");
     }
 
     @Override

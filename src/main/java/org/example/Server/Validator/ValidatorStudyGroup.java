@@ -3,24 +3,8 @@ package org.example.Server.Validator;
 public class ValidatorStudyGroup extends ValidateAbstract<String[]>{
 
     public ValidatorStudyGroup() {
-        super("StudyGroup");
+        super("StudyGroup" , "");
     }
-
-//    @Override
-//    public boolean validate(String[] variable) {
-//        var coordinats = new ValidatorCoordinates();
-//        var studentsCount = new ValidatorStudentsCount();
-//        var formOfEducation = new ValidatorFormOfEducation();
-//        var semester = new ValidatorSemester();
-//        var person = new ValidatorPerson();
-//
-//        if (new ValidateName().validate(variable[0]) && coordinats.validate(coordinats.caster(variable[1])) &&
-//        studentsCount.validate(studentsCount.caster(variable[2])) && formOfEducation.validate(formOfEducation.caster(variable[3])) &&
-//                semester.validate(semester.caster(variable[4])) && person.validate(person.caster(variable[5]))) {
-//            return true;
-//        }
-//        return false;
-//    }
 
     @Override
     public Class<String[]> getType() {

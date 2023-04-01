@@ -21,7 +21,7 @@ import java.time.ZonedDateTime;
 import java.util.Collections;
 import java.util.Stack;
 
-public class xmlFileHandler implements Loading.Loadable {
+public class XmlFileHandler implements Loading.Loadable {
 
     private Stack<StudyGroup> groups;
     private ZonedDateTime initializationDate;

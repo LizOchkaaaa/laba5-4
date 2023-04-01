@@ -5,7 +5,7 @@ import org.example.Server.Models.Semester;
 public class ValidatorSemester extends ValidateAbstract<Semester>{
 
     public ValidatorSemester() {
-        super("StudyGroup.Semester");
+        super("StudyGroup.Semester" , "not null");
     }
 
     @Override

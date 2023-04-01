@@ -2,6 +2,7 @@ package org.example.Client;
 
 import java.util.ArrayList;
 
+/**Class to separate name and arguments for a command*/
 public class CommandValidator {
     private String commandName;
     private ArrayList<String> commandArguments = new ArrayList<>();

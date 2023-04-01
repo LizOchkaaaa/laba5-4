@@ -3,6 +3,10 @@ package org.example.Server.Validator;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
+/**Class to store all validators.
+ * Call the required validator by field name
+ */
+
 public class ValidatorManager {
     private LinkedHashMap<String, ValidateAbstract<?>> validatorList;
     private ArrayList<String> validatorNameList;

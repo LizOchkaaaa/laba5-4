@@ -3,7 +3,7 @@ package org.example.Server.Validator;
 public class ValidatorPassportId extends ValidateAbstract<String> {
 
     public ValidatorPassportId() {
-        super("StudyGroup.Person.passportID");
+        super("StudyGroup.Person.passportID" , "not null and line size >= 0");
     }
 
     @Override
